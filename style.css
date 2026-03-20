@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+header {
+    padding: 50px 20px;
+    border-bottom: 1px solid #5e17eb;
+}
+
+.logo {
+    width: 170px;
+    margin-bottom: 35px;
+}
+
+h1 {
+    color: #5e17eb;
+    font-size: 42px;
+}
+
+.slogan {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+
+section {
+    background-color: #0a0a0a;
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 700px;
+    border-radius: 15px;
+    border: 5px solid #5e17eb33;
+    box-shadow: 0 0 15px #5e17eb22;
+}
+
+
+.impacto h2 {
+    color: #5e17eb;
+    font-size: 28px;
+}
+
+
+.sobre p {
+    line-height: 1.6;
+}
+
+
+.servicos h3 {
+    color: #5e17eb;
+    margin-bottom: 10px;
+}
+
+.servicos ul {
+    list-style: none;
+}
+
+.servicos li {
+    margin: 8px 0;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 8px;
+    border: 1px solid #5e17eb55;
+    transition: 0.3s;
+}
+
+.servicos li:hover {
+    background-color: #5e17eb;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+
+.equipe h3 {
+    color: #5e17eb;
+    margin-bottom: 10px;
+}
+
+.equipe p {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #000000;
+    border-radius: 6px;
+    border: 1px solid #5e17eb33;
+}
+
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #5e17eb;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.equipe p {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.equipe p:hover {
+    color: #5e17eb;
+}
+
+
+.ativo {
+    color: #5e17eb;
+    font-weight: bold;
+}
+
+
+#contato {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #ffffff;
+}
+.equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.membro img {
+    width: 70px;        
+    height: 70px;      
+    border-radius: 50%; 
+    object-fit: cover;  
+    margin-bottom: 8px;
+    border: 2px solid #5e17eb; 
+}
+.membro img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #5e17eb;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NyxSistem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="img/logo.png" alt="Logo NyxSistem" class="logo">
+        <h1>NyxSistem</h1>
+        <p class="slogan">Tecnologia além do visível</p>
+    </header>
+
+    <section class="impacto">
+        <h2>Soluções inteligentes com inovação e precisão</h2>
+    </section>
+
+    <section class="sobre">
+        <p>
+            A NyxSistem desenvolve soluções tecnológicas modernas, focadas em eficiência,
+            segurança e inovação, oferecendo sistemas inteligentes para o dia a dia. Ela tem como  objetivo automatizar e organizar os dados gerados pela empresa.
+        </p>
+    </section>
+
+    <section class="servicos">
+        <h3>O que fazemos</h3>
+        <ul>
+            <li>Desenvolvimento de sistemas</li>
+            <li>Banco de dados</li>
+            <li>Soluções tecnológicas</li>
+        </ul>
+    </section>
+
+    <section class="equipe">
+    <h3>Equipe</h3>
+
+    <div class="membro" onclick="mostrarContato(this, '19993509771')">
+        <img src="img/caua.png">
+        <p>Cauã Cândido</p>
+    </div>
+
+    <div class="membro" onclick="mostrarContato(this, '19991354297')">
+        <img src="img/gabi.png">
+        <p>Gabriela Giglio</p>
+    </div>
+
+    <div class="membro" onclick="mostrarContato(this, '19992412353')">
+        <img src="img/henrique.png">
+        <p>Henrique Farini</p>
+    </div>
+
+    <div class="membro" onclick="mostrarContato(this, '19989713086')">
+        <img src="img/marialaura.png">
+        <p>Maria Laura</p>
+    </div>
+
+   
+    <div class="membro" onclick="mostrarContato(this, '19991489100')">
+        <img src="img/mariana.png">
+        <p>Mariana Nicolato</p>
+    </div>
+
+    <div id="contato"></div>
+</section>
+
+    <footer>
+        <p> SENAI | NOSSA EMPRESA | 2026</p>
+    </footer>
+
+    <script>
+function mostrarContato(elemento, telefone) {
+
+    let nomes = document.querySelectorAll('.equipe p');
+    nomes.forEach(n => n.classList.remove('ativo'));
+
+   
+    elemento.classList.add('ativo');
+
+    
+    document.getElementById('contato').innerText = 
+        "Contato: " + telefone;
+}
+</script>
+</body>
+</html>
